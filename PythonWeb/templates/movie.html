@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DouBanTop250</title>
 </head>
-<body>
-<h1>豆瓣电影Top250</h1>
+<body background="">
+<center><h1>豆瓣电影Top250</h1></center>
+
 
 {% for foo in message %}
-    <p>
-    {{ foo.name}}
-    {{ foo.url}}
-    <img src="{{ foo.image}}" />
-    </p>
+
+        <center>
+
+            <font size="12" style="all-space-treatment: ">{{ foo.name}}<br/></font>
+            <a href="{{ foo.url}}">{{ foo.url}}</a><br/>
+            <a href="{{ foo.image}}"><img src="{{ foo.image}}" /></a>
+
+        </center>
+
 {% endfor %}
 
 </body>
